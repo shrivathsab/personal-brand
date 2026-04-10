@@ -3,18 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- REPLACE: Page title with your name -->
-<title>Jane Doe — Product Designer</title>
+<title>Shrivathsa Bendrala — Sr. Software QA Automation Engineer</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-:root{--primary:#2563eb;--primary-dark:#1d4ed8;--accent:#f59e0b;--bg:#0f172a;--bg-light:#1e293b;--surface:#1e293b;--surface-hover:#334155;--text:#f1f5f9;--text-light:#94a3b8;--border:#334155;--gradient:linear-gradient(135deg,#2563eb,#7c3aed)}
+:root{--primary:#2563eb;--primary-dark:#1d4ed8;--accent:#f59e0b;--bg:#0f172a;--bg-light:#1e293b;--surface:#1e293b;--text:#f1f5f9;--text-light:#94a3b8;--border:#334155;--gradient:linear-gradient(135deg,#2563eb,#7c3aed)}
 html{scroll-behavior:smooth}
 body{font-family:'Inter',sans-serif;color:var(--text);background:var(--bg);line-height:1.6}
 a{color:var(--primary);text-decoration:none;transition:color .2s}
 a:hover{color:var(--accent)}
 
-/* Nav */
 nav{position:sticky;top:0;background:rgba(15,23,42,.9);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);z-index:100;padding:.75rem 0}
 nav .inner{max-width:1100px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:0 2rem}
 nav .logo{font-weight:800;font-size:1.2rem;background:var(--gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
@@ -28,12 +26,11 @@ h2{font-size:1.75rem;font-weight:700;margin-bottom:.5rem}
 .section-subtitle{color:var(--text-light);margin-bottom:2.5rem;font-size:.95rem}
 .badge{display:inline-block;background:var(--gradient);color:#fff;font-size:.7rem;font-weight:600;padding:.25rem .75rem;border-radius:999px;text-transform:uppercase;letter-spacing:.05em}
 
-/* Hero — split layout */
 .hero{min-height:90vh;display:flex;align-items:center}
 .hero .container{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
 .hero-text h1{font-size:clamp(2.5rem,5vw,3.75rem);font-weight:800;letter-spacing:-.03em;line-height:1.1}
 .hero-text h1 span{background:var(--gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
-.hero-text .tagline{font-size:1.15rem;color:var(--text-light);margin:1.25rem 0 2rem;max-width:480px}
+.hero-text .tagline{font-size:1.05rem;color:var(--text-light);margin:1.25rem 0 2rem;max-width:500px;line-height:1.7}
 .hero-text .cta-row{display:flex;gap:1rem;flex-wrap:wrap}
 .btn{display:inline-flex;align-items:center;gap:.5rem;padding:.75rem 1.5rem;border-radius:.5rem;font-weight:600;font-size:.9rem;transition:all .2s;border:none;cursor:pointer}
 .btn-primary{background:var(--gradient);color:#fff}
@@ -44,10 +41,14 @@ h2{font-size:1.75rem;font-weight:700;margin-bottom:.5rem}
 .hero-photo img{width:320px;height:320px;border-radius:1.5rem;object-fit:cover;border:3px solid var(--border);transition:transform .3s}
 .hero-photo img:hover{transform:scale(1.03)}
 
-/* Contact bar */
-.contact-bar{display:flex;justify-content:center;gap:2.5rem;flex-wrap:wrap;padding:1.25rem 2rem;background:var(--surface);border:1px solid var(--border);border-radius:.75rem;margin:-2rem auto 0;max-width:600px;position:relative;z-index:10}
+.contact-bar{display:flex;justify-content:center;gap:2.5rem;flex-wrap:wrap;padding:1.25rem 2rem;background:var(--surface);border:1px solid var(--border);border-radius:.75rem;margin:-2rem auto 0;max-width:650px;position:relative;z-index:10}
 .contact-bar a{color:var(--text-light);font-size:.9rem;font-weight:500}
 .contact-bar a:hover{color:#fff}
+
+/* Skills */
+.skills-grid{display:flex;flex-wrap:wrap;gap:.75rem}
+.skill-tag{background:var(--surface);border:1px solid var(--border);padding:.5rem 1rem;border-radius:999px;font-size:.85rem;font-weight:500;transition:all .2s}
+.skill-tag:hover{border-color:var(--primary);color:var(--primary)}
 
 /* Global Map */
 .map-section{background:var(--bg-light);border-radius:1rem;padding:3rem;margin-top:1rem}
@@ -66,7 +67,7 @@ h2{font-size:1.75rem;font-weight:700;margin-bottom:.5rem}
 .map-card .period{color:var(--text-light);font-size:.8rem;margin-bottom:.5rem}
 .map-card .summary{color:var(--text-light);font-size:.8rem;line-height:1.5}
 
-/* Work History */
+/* Timeline */
 .timeline{position:relative;padding-left:2rem}
 .timeline::before{content:'';position:absolute;left:0;top:0;bottom:0;width:2px;background:var(--border)}
 .timeline-item{position:relative;margin-bottom:2rem;padding-left:1.5rem}
@@ -75,6 +76,7 @@ h2{font-size:1.75rem;font-weight:700;margin-bottom:.5rem}
 .timeline-item .company{color:var(--primary);font-weight:500;font-size:.95rem}
 .timeline-item .dates{font-size:.8rem;color:var(--text-light);margin:.25rem 0 .5rem}
 .timeline-item .desc{font-size:.875rem;color:var(--text-light);max-width:650px}
+.timeline-item .desc li{margin-bottom:.35rem}
 
 /* Showcase */
 .showcase-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.5rem}
@@ -86,6 +88,14 @@ h2{font-size:1.75rem;font-weight:700;margin-bottom:.5rem}
 .showcase-card .link{font-size:.85rem;font-weight:600;color:var(--primary)}
 .showcase-card .link:hover{color:var(--accent)}
 
+/* Education */
+.edu-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.5rem}
+.edu-card{background:var(--surface);border:1px solid var(--border);border-radius:.75rem;padding:1.5rem;transition:border-color .2s}
+.edu-card:hover{border-color:var(--primary)}
+.edu-card .degree{font-weight:600;font-size:1rem;margin-bottom:.25rem}
+.edu-card .school{color:var(--primary);font-size:.9rem;font-weight:500}
+.edu-card .details{color:var(--text-light);font-size:.8rem;margin-top:.35rem}
+
 /* Passion */
 .passion-content{display:grid;grid-template-columns:2fr 1fr;gap:3rem;align-items:start}
 .passion-content p{font-size:1rem;color:var(--text-light);line-height:1.8}
@@ -94,10 +104,8 @@ h2{font-size:1.75rem;font-weight:700;margin-bottom:.5rem}
 .stat .number{font-size:2rem;font-weight:800;background:var(--gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
 .stat .label{font-size:.8rem;color:var(--text-light);margin-top:.25rem}
 
-/* Footer */
 footer{text-align:center;padding:2.5rem 2rem;color:var(--text-light);font-size:.8rem;border-top:1px solid var(--border)}
 
-/* Mobile */
 @media(max-width:768px){
   .hero .container{grid-template-columns:1fr;text-align:center;gap:2rem}
   .hero-text .tagline{margin-left:auto;margin-right:auto}
@@ -115,98 +123,83 @@ footer{text-align:center;padding:2.5rem 2rem;color:var(--text-light);font-size:.
 
 <nav>
   <div class="inner">
-    <!-- REPLACE: Your initials -->
-    <div class="logo">JD</div>
+    <div class="logo">SB</div>
     <ul>
+      <li><a href="#skills">Skills</a></li>
       <li><a href="#global">Global</a></li>
-      <li><a href="#work">Work</a></li>
+      <li><a href="#work">Experience</a></li>
+      <li><a href="#education">Education</a></li>
       <li><a href="#showcase">Showcase</a></li>
-      <li><a href="#passion">Passion</a></li>
     </ul>
   </div>
 </nav>
 
-<section class="hero">
+<section class="hero" id="about">
   <div class="container">
     <div class="hero-text">
       <div class="badge">Open to Opportunities</div>
-      <!-- REPLACE: Your full name -->
-      <h1 style="margin-top:1rem">Hi, I'm <span>Jane Doe</span></h1>
-      <!-- REPLACE: Your tagline -->
-      <p class="tagline">Product designer with 8+ years of experience crafting intuitive digital experiences across fintech and healthcare — working globally from India, the USA, and Europe.</p>
+      <h1 style="margin-top:1rem">Hi, I'm <span>Shrivathsa Bendrala</span></h1>
+      <p class="tagline">Senior Software QA Automation Engineer with 8+ years of experience across the full testing lifecycle — test planning, design, execution, and analysis. Specialized in building automation frameworks for GUI, web, client/server, and database applications across ecommerce, finance, banking, and payment gateway domains.</p>
       <div class="cta-row">
-        <!-- REPLACE: Your email -->
-        <a href="mailto:jane.doe@example.com" class="btn btn-primary">✉️ Get in Touch</a>
-        <!-- REPLACE: Your resume link -->
-        <a href="#showcase" class="btn btn-outline">View My Work ↓</a>
+        <a href="mailto:shrivathsab@gmail.com" class="btn btn-primary">✉️ Get in Touch</a>
+        <a href="#work" class="btn btn-outline">View Experience ↓</a>
       </div>
     </div>
     <div class="hero-photo">
-      <!-- REPLACE: src with your photo URL -->
-      <img src="https://i.pravatar.cc/400?img=47" alt="Profile photo">
+      <img src="shri-photo.jpeg" alt="Shrivathsa Bendrala">
     </div>
   </div>
 </section>
 
 <div class="contact-bar">
-  <!-- REPLACE: Your phone number -->
-  <a href="tel:+11234567890">📞 +1 (123) 456-7890</a>
-  <!-- REPLACE: Your email -->
-  <a href="mailto:jane.doe@example.com">✉️ jane.doe@example.com</a>
-  <!-- REPLACE: Your LinkedIn -->
-  <a href="https://linkedin.com/in/janedoe" target="_blank">🔗 LinkedIn</a>
+  <a href="tel:+919972228690">📞 +91-997-222-8690</a>
+  <a href="mailto:shrivathsab@gmail.com">✉️ shrivathsab@gmail.com</a>
+  <a href="https://www.linkedin.com/in/shrivathsa-bendrala-9a7927138" target="_blank">🔗 LinkedIn</a>
 </div>
+
+<section id="skills">
+  <div class="container">
+    <h2>Core Competencies</h2>
+    <p class="section-subtitle">Technologies and tools I work with daily.</p>
+    <div class="skills-grid">
+      <span class="skill-tag">Python</span>
+      <span class="skill-tag">Selenium WebDriver</span>
+      <span class="skill-tag">Pytest</span>
+      <span class="skill-tag">Cucumber BDD</span>
+      <span class="skill-tag">REST API Testing</span>
+      <span class="skill-tag">Playwright</span>
+      <span class="skill-tag">Git</span>
+      <span class="skill-tag">Jenkins</span>
+      <span class="skill-tag">Shell Scripting</span>
+      <span class="skill-tag">Agile Testing</span>
+      <span class="skill-tag">HP ALM</span>
+      <span class="skill-tag">JIRA</span>
+      <span class="skill-tag">CI/CD Pipelines</span>
+      <span class="skill-tag">Test Automation Frameworks</span>
+    </div>
+  </div>
+</section>
 
 <section id="global">
   <div class="container">
     <h2>Global Experience</h2>
-    <p class="section-subtitle">I've had the privilege of working across three continents, collaborating with diverse teams and cultures.</p>
+    <p class="section-subtitle">Building and leading QA teams across three countries.</p>
 
     <div class="map-section">
-      <div class="map-visual">
+      <div class="map-visual" style="margin-bottom:0">
         <div class="map-node">
           <div class="flag">🇮🇳</div>
           <div class="country">India</div>
-          <!-- REPLACE: Years in India -->
-          <div class="years">2016 — 2019</div>
         </div>
         <div class="map-connector"></div>
         <div class="map-node">
           <div class="flag">🇺🇸</div>
           <div class="country">USA</div>
-          <!-- REPLACE: Years in USA -->
-          <div class="years">2019 — 2023</div>
         </div>
         <div class="map-connector"></div>
         <div class="map-node">
           <div class="flag">🇨🇿</div>
           <div class="country">Czech Republic</div>
-          <!-- REPLACE: Years in Czech Republic -->
-          <div class="years">2023 — Present</div>
-        </div>
-      </div>
-
-      <div class="map-details">
-        <div class="map-card">
-          <!-- REPLACE: India role details -->
-          <div class="location">🇮🇳 Bangalore, India</div>
-          <div class="role">UX Designer → Senior Designer</div>
-          <div class="period">2016 — 2019</div>
-          <p class="summary">Started career at a fast-growing fintech startup. Built the product's UX from scratch and grew the design team from 1 to 5.</p>
-        </div>
-        <div class="map-card">
-          <!-- REPLACE: USA role details -->
-          <div class="location">🇺🇸 Seattle, USA</div>
-          <div class="role">Senior Product Designer</div>
-          <div class="period">2019 — 2023</div>
-          <p class="summary">Led enterprise product design at a Fortune 500 company. Shipped features used by 2M+ users across healthcare and insurance.</p>
-        </div>
-        <div class="map-card">
-          <!-- REPLACE: Czech Republic role details -->
-          <div class="location">🇨🇿 Prague, Czech Republic</div>
-          <div class="role">Lead Product Designer</div>
-          <div class="period">2023 — Present</div>
-          <p class="summary">Leading design for a cross-functional team building developer tools. Collaborating with engineering teams across EU time zones.</p>
         </div>
       </div>
     </div>
@@ -215,30 +208,69 @@ footer{text-align:center;padding:2.5rem 2rem;color:var(--text-light);font-size:.
 
 <section id="work">
   <div class="container">
-    <h2>Work History</h2>
-    <p class="section-subtitle">A timeline of my professional journey.</p>
+    <h2>Professional Experience</h2>
+    <p class="section-subtitle">A timeline of my career journey.</p>
 
     <div class="timeline">
       <div class="timeline-item">
-        <!-- REPLACE: Job details -->
-        <div class="role">Lead Product Designer</div>
-        <div class="company">TechCo Prague</div>
-        <div class="dates">Jan 2023 — Present</div>
-        <p class="desc">Leading a team of 4 designers building developer productivity tools. Established the design system and reduced design-to-dev handoff time by 40%.</p>
+        <div class="role">Software QA Engineer III</div>
+        <div class="company">Stats Perform</div>
+        <div class="dates">Aug 2025 — Mar 2026</div>
+        <ul class="desc">
+          <li>Led QA automation efforts for sports data analytics platform, ensuring data accuracy and reliability across real-time feeds.</li>
+        </ul>
       </div>
       <div class="timeline-item">
-        <!-- REPLACE: Job details -->
-        <div class="role">Senior Product Designer</div>
-        <div class="company">Acme Corp, Seattle</div>
-        <div class="dates">Mar 2019 — Dec 2022</div>
-        <p class="desc">Redesigned the core analytics dashboard, improving task completion rates by 34%. Collaborated with engineering and product teams across 3 time zones.</p>
+        <div class="role">Sr. Software QA Engineer</div>
+        <div class="company">Tesla Inc</div>
+        <div class="dates">Oct 2019 — Mar 2025</div>
+        <ul class="desc">
+          <li>Architected and deployed a test automation framework for Tesla billing systems, reducing regression efforts by 40% and drastically reducing production bugs.</li>
+          <li>Led a cross-functional team in the rollout of a new product in supercharging, enhancing operational efficiency and gaining a 40% faster response time to critical issues.</li>
+          <li>Led API testing with Pytest, achieving 90% RESTful service coverage.</li>
+          <li>Directed test planning and execution of an offshore team in Czech Republic.</li>
+          <li>Generated traceability matrices, automation reports, and project dashboards to ensure standards compliance.</li>
+        </ul>
       </div>
       <div class="timeline-item">
-        <!-- REPLACE: Job details -->
-        <div class="role">UX Designer</div>
-        <div class="company">StartupXYZ, Bangalore</div>
-        <div class="dates">Jun 2016 — Feb 2019</div>
-        <p class="desc">First design hire. Built the product's UX from scratch — from user research and wireframes to high-fidelity prototypes. Helped the company grow from seed to Series A.</p>
+        <div class="role">QA Automation Engineer</div>
+        <div class="company">Oriental Trading Company</div>
+        <div class="dates">May 2017 — Oct 2019</div>
+        <ul class="desc">
+          <li>Designed and developed test automation frameworks for desktop and mobile, converting 1,000+ hours of manual testing into automation — saving $60,000.</li>
+          <li>Created automation framework from scratch for REST web services, set up test infrastructure, and integrated with CI/CD pipelines.</li>
+          <li>Led and mentored junior automation and manual QA engineers.</li>
+          <li>Monitored and maintained bug tracking reports and assisted in process improvement.</li>
+        </ul>
+      </div>
+      <div class="timeline-item">
+        <div class="role">QA Analyst</div>
+        <div class="company">Accenture Services Pvt. Ltd. — Chennai, India</div>
+        <div class="dates">Jun 2012 — Jun 2015</div>
+        <ul class="desc">
+          <li>Followed Agile (Kanban) development processes working with Dev and Business teams, onshore and offshore.</li>
+          <li>Designed and implemented automated testing tools for database impacts, regression, negative testing, and usability.</li>
+          <li>Conducted test case reviews, release planning, and led the testing team through all project phases.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="education">
+  <div class="container">
+    <h2>Education</h2>
+    <p class="section-subtitle">Academic foundation.</p>
+    <div class="edu-grid">
+      <div class="edu-card">
+        <div class="degree">Master of Science — Managing Information Systems</div>
+        <div class="school">University of Nebraska, Omaha</div>
+        <div class="details">GPA: 3.625 · Dec 2017</div>
+      </div>
+      <div class="edu-card">
+        <div class="degree">Bachelor of Technology — Electronics Engineering</div>
+        <div class="school">SDMIT Ujire, India</div>
+        <div class="details">CGPA: 7.0 · Sep 2012</div>
       </div>
     </div>
   </div>
@@ -247,50 +279,48 @@ footer{text-align:center;padding:2.5rem 2rem;color:var(--text-light);font-size:.
 <section id="showcase">
   <div class="container">
     <h2>Showcase</h2>
-    <p class="section-subtitle">Projects, contributions, and places you can find my work.</p>
+    <p class="section-subtitle">Projects, contributions, and where to find my work.</p>
 
     <div class="showcase-grid">
       <div class="showcase-card">
         <div class="icon">💻</div>
-        <!-- REPLACE: Your GitHub details -->
         <h3>GitHub</h3>
-        <p>Open source contributions and personal projects — design systems, CLI tools, and automation scripts.</p>
-        <a href="https://github.com/janedoe" target="_blank" class="link">github.com/janedoe →</a>
+        <p>Test automation frameworks, Selenium/Pytest projects, CI/CD pipeline configurations, and open source contributions.</p>
+        <!-- REPLACE: Your GitHub URL -->
+        <a href="https://github.com/shrivathsab" target="_blank" class="link">github.com/shrivathsab →</a>
       </div>
       <div class="showcase-card">
-        <div class="icon">🎨</div>
-        <!-- REPLACE: Your portfolio details -->
-        <h3>Design Portfolio</h3>
-        <p>Case studies from enterprise product design — including the analytics dashboard redesign and patient onboarding flow.</p>
-        <a href="https://dribbble.com/janedoe" target="_blank" class="link">dribbble.com/janedoe →</a>
+        <div class="icon">🤖</div>
+        <h3>Tesla Billing Automation Framework</h3>
+        <p>Architected end-to-end test automation for Tesla's billing systems — reduced regression by 40% and cut production bugs significantly.</p>
+        <span class="link" style="color:var(--text-light)">Proprietary · Tesla Inc</span>
       </div>
       <div class="showcase-card">
-        <div class="icon">✍️</div>
-        <!-- REPLACE: Your blog/writing details -->
-        <h3>Writing</h3>
-        <p>Articles on design systems, cross-cultural collaboration, and building products for global audiences.</p>
-        <a href="https://medium.com/@janedoe" target="_blank" class="link">medium.com/@janedoe →</a>
+        <div class="icon">🧪</div>
+        <h3>REST API Testing Suite</h3>
+        <p>Built a Pytest-based API testing framework achieving 90% coverage across RESTful services. Integrated with Jenkins CI/CD for continuous validation.</p>
+        <!-- REPLACE: Link if public -->
+        <span class="link" style="color:var(--text-light)">Proprietary · Tesla Inc</span>
       </div>
       <div class="showcase-card">
-        <div class="icon">🎤</div>
-        <!-- REPLACE: Your speaking/talks details -->
-        <h3>Talks & Conferences</h3>
-        <p>Speaker at DesignConf 2024 and UX Prague Meetup. Topics: scaling design systems and remote-first design culture.</p>
-        <a href="#" class="link">View recordings →</a>
-      </div>
-      <div class="showcase-card">
-        <div class="icon">📦</div>
-        <!-- REPLACE: Your side project details -->
-        <h3>Side Projects</h3>
-        <p>Built a Figma plugin for accessibility audits with 2K+ installs. Maintaining a design token library used by 3 teams.</p>
-        <a href="#" class="link">Learn more →</a>
+        <div class="icon">📱</div>
+        <h3>Mobile & Desktop Automation</h3>
+        <p>Designed cross-platform test automation at Oriental Trading — converted 1,000+ hours of manual testing into scripts, saving $60K annually.</p>
+        <span class="link" style="color:var(--text-light)">Proprietary · Oriental Trading</span>
       </div>
       <div class="showcase-card">
         <div class="icon">🔗</div>
-        <!-- REPLACE: Your LinkedIn details -->
         <h3>LinkedIn</h3>
-        <p>Professional network, recommendations, and endorsements from colleagues across India, USA, and Europe.</p>
-        <a href="https://linkedin.com/in/janedoe" target="_blank" class="link">linkedin.com/in/janedoe →</a>
+        <p>Professional network, recommendations, and endorsements from colleagues across India, USA, and Czech Republic.</p>
+        <!-- REPLACE: Your LinkedIn URL -->
+        <a href="https://www.linkedin.com/in/shrivathsa-bendrala-9a7927138" target="_blank" class="link">linkedin.com/in/shrivathsa-bendrala →</a>
+      </div>
+      <div class="showcase-card">
+        <div class="icon">📄</div>
+        <h3>Resume</h3>
+        <p>Download my full resume with detailed work history, skills, and references.</p>
+        <!-- REPLACE: Link to your resume PDF -->
+        <a href="#" class="link">Download PDF →</a>
       </div>
     </div>
   </div>
@@ -299,32 +329,31 @@ footer{text-align:center;padding:2.5rem 2rem;color:var(--text-light);font-size:.
 <section id="passion">
   <div class="container">
     <h2>What Drives Me</h2>
-    <p class="section-subtitle">Beyond the work.</p>
+    <p class="section-subtitle">Beyond the code.</p>
 
     <div class="passion-content">
-      <!-- REPLACE: Your passion statement -->
       <div>
-        <p>I believe great design is invisible — it gets out of the way and lets people accomplish what they came to do. My career has been shaped by a simple question: how do we make complex systems feel simple?</p>
-        <p style="margin-top:1rem">Working across India, the USA, and Czech Republic has taught me that the best products are built by diverse teams who challenge each other's assumptions. I bring that global perspective to every project I touch.</p>
-        <p style="margin-top:1rem">Outside of work, I mentor early-career designers and volunteer with organizations bringing digital literacy to underserved communities.</p>
+        <!-- REPLACE: Your passion statement -->
+        <p>I believe quality is not just about finding bugs — it's about building confidence in every release. My career has been driven by a simple principle: automate everything that can be automated, so humans can focus on what matters most.</p>
+        <p style="margin-top:1rem">Working across India, the USA, and with teams in Czech Republic has taught me that great QA is about communication as much as it is about code. The best test frameworks I've built weren't just technically sound — they were adopted because they made everyone's life easier.</p>
+        <p style="margin-top:1rem">I'm passionate about mentoring junior engineers, building frameworks that scale, and ensuring that every product I touch ships with confidence.</p>
       </div>
       <div class="passion-stats">
-        <!-- REPLACE: Your stats -->
         <div class="stat">
           <div class="number">8+</div>
           <div class="label">Years of Experience</div>
         </div>
         <div class="stat">
           <div class="number">3</div>
-          <div class="label">Countries Worked In</div>
+          <div class="label">Countries Collaborated</div>
         </div>
         <div class="stat">
-          <div class="number">2M+</div>
-          <div class="label">Users Impacted</div>
+          <div class="number">90%</div>
+          <div class="label">API Test Coverage at Tesla</div>
         </div>
         <div class="stat">
-          <div class="number">15+</div>
-          <div class="label">Designers Mentored</div>
+          <div class="number">$60K</div>
+          <div class="label">Annual Savings via Automation</div>
         </div>
       </div>
     </div>
@@ -332,8 +361,7 @@ footer{text-align:center;padding:2.5rem 2rem;color:var(--text-light);font-size:.
 </section>
 
 <footer>
-  <!-- REPLACE: Your name -->
-  <p>&copy; 2026 Jane Doe. Built with ☕ from Prague.</p>
+  <p>&copy; 2025 Shrivathsa Bendrala. All rights reserved.</p>
 </footer>
 
 </body>
